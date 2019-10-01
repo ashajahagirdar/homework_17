@@ -77,7 +77,10 @@ header h3 {
     margin-top: 30px;
     display: grid;
     grid-gap: 30px;
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 32% 32% 32%;
+    /* grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, 400px); */
+    /* box-sizing: border-box; */
+    /* grid-template-columns: 1fr 1fr 1fr;  */
     grid-template-areas: 
         'card1 card2 card3'
         'card4 card5 card6'
@@ -219,7 +222,8 @@ footer {
             grid-template-areas:
             'card1 card2'
             'card3 card4'
-            'card5 card6'
+            'card5 card6';
+            grid-template-columns: 46.5% 46.5%;
         }
 
         .info {
@@ -267,7 +271,8 @@ footer {
             'card3'
             'card4'
             'card5'
-            'card6'
+            'card6';
+            grid-template-columns: 100%;
         }
 
         header h1 {
